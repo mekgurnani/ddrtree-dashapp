@@ -2,6 +2,7 @@ from pathlib import Path
 import json
 import numpy as np
 import os
+import matplotlib.pyplot as plt
 
 from collections import defaultdict
 import ecg_plot
@@ -347,8 +348,5 @@ def update_hover_plot(hoverData):
     
     return fig_plotly
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 8050))
-    app.run_server(host='0.0.0.0', port=port)
-# if __name__ == '__main__':
-#     app.run_server(host='0.0.0.0', port=8051, debug=True)
+if __name__ == "__main__":
+    app.run_server(debug=True)
