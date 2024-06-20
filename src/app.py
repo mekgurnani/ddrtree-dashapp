@@ -4,7 +4,6 @@ import numpy as np
 import os
 
 from collections import defaultdict
-import matplotlib.pyplot as plt
 import ecg_plot
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
