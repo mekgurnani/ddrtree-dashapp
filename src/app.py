@@ -348,5 +348,6 @@ def update_hover_plot(hoverData):
     
     return fig_plotly
 
-if __name__ == "__main__":
-    app.run_server(debug=True)
+if __name__ == '__main__':
+    app.run_server(host= '0.0.0.0', port=8050)
+
